@@ -1,0 +1,24 @@
+// Base: reset / typography / utilities
+
+@use './variables' as *;
+@use './mixins' as *;
+
+/* Modern CSS reset (subset) */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+html:focus-within { scroll-behavior: smooth; }
+html, body { height: 100%; }
+body { line-height: 1.5; -webkit-font-smoothing: antialiased; }
+img, picture, video, canvas, svg { display: block; max-width: 100%; }
+input, button, textarea, select { font: inherit; }
+
+body {
+  font-family: $font-sans;
+  background-color: $color-background;
+  color: $color-text;
+}
+
+a { color: $color-primary; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.visually-hidden { @include sr-only(); }

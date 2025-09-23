@@ -1,0 +1,141 @@
+$ink: #0f0f0f;
+$rounded: 12px;
+.hero-about {
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  padding-top: 6rem !important;
+  .hero-stats .col-6,
+// .hero-stats .col-lg-3 {
+//   opacity: 0;            // يبدأ مخفي
+//   transform: translateY(16px); // تحت شوي
+// }
+  h1,
+  .eyebrow,
+  .hero-stats {
+    font-weight: bold !important;
+    @media screen and (max-width: 768px) {
+      text-align: center !important;
+      
+    }
+  }
+.left .right {
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  .eyebrow {
+    color: $color-primary;
+    letter-spacing: 0.06em;
+    font-size: $space-6;
+    @media screen and (max-width: 768px) {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+
+  h1 {
+    color: $ink;
+    line-height: 1.05;
+    font-size: $space-12;
+    @media screen and (max-width: 768px) {
+      font-size: $space-10;
+    }
+  }
+  p {
+    font-size: $space-6;
+    color: $color-neutral;
+    font-weight: 400;
+    width: 94%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      text-align: center !important;
+    }
+  }
+  /* المشهد على اليمين */
+  .hero-visual {
+    position: relative;
+    width: 32.5rem;
+    max-width: 100%;
+    aspect-ratio :  auto; /* مساحة للعمل */
+    margin: auto;
+    @media screen and (max-width:992px) {
+      width: 80%;
+    }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    .courier {
+      position: absolute;
+      right: 12%;
+      top: -2%;
+      width: 72%;
+      height: auto;
+      object-fit: contain;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+      /* بدّل الصورة بملفك الشفاف PNG */
+    }
+
+    .shadow-soft {
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+      border: 0;
+    }
+   .image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+    @media screen and (max-width: 768px) {
+      width: 90%;
+    }
+   }
+    .card-burger {
+      position: absolute;
+      left: -5%;
+      bottom: 13%;
+      width: 15em;
+      object-fit: cover;
+      border-radius: $rounded;
+      overflow: hidden;
+      @media screen and (max-width: 768px) {
+        width: 11.25em;
+        left: 0%;
+      }
+      img {
+        display: block;;
+      }
+    }
+
+    .card-delivery {
+      position: absolute;
+      right: -10%;
+      bottom: 10%;
+      width: 17.5em;
+      border-radius: $rounded;
+      overflow: hidden;
+      @media screen and (max-width: 768px) {
+        width: 13.75em;
+        bottom: 10%;
+        right: 0%;
+      }
+      img {
+        display: block;
+      }
+    }
+  }
+
+  /* الأرقام */
+  .hero-stats .stat {
+    color: $ink;
+    font-size: $space-12;
+    font-weight: bold !important;
+ @media screen and (max-width: 768px) {
+  font-size: $space-10;      
+    }
+    .accent {
+      color: $color-primary;
+    }
+  }
+}

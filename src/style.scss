@@ -1,0 +1,16 @@
+// متغيراتك أولاً
+@import "./variables";
+@import "./mixins";
+
+// Bootstrap (لو عايز تخصّص، استورد المصدر بدل css الجاهز)
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+
+// قواعد الأساس واللّاوت
+@import "./base";
+@import "./layout";
+@import "./components";
+@import "./animations";
+

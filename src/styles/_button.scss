@@ -1,0 +1,27 @@
+$primary: #ff5722;
+$padding: 16px 25px;
+$rounded: 12px;
+$weight:bold;
+.my-btn {
+  background-color: $primary !important;
+  color: #fff !important;
+  padding: $padding !important;
+  border-radius: $rounded !important;
+  font-weight: $weight !important;
+  &:hover {
+    background-color: #e04f33 !important;
+    color: #fff !important;
+  }
+}
+.my-outline {
+  border-color: rgba(0, 0, 0, 0.123) !important;
+  padding: $padding !important;
+  font-weight: $weight !important;
+  border-radius: $rounded !important;
+}
+.my-outline:hover {
+  &:hover {
+    background-color: $primary !important;
+    border-color: rgba(255, 0, 0, 0) !important;
+  }
+}

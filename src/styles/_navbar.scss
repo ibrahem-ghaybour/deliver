@@ -1,0 +1,81 @@
+$text: #1e1e1e;
+
+.site-header {
+  background: #fff;
+  padding: 23px 0px;
+  position: sticky; top: 0; z-index: 1030;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.03);
+}
+
+.navbar {
+  padding-block: 0.85rem;
+
+  .navbar-brand {
+    .brand-text { font-size: 1.25rem; color: $text; }
+  }
+
+  .nav-link {
+    color: #4a4a4a;
+    font-weight: 500;
+    padding: .5rem .75rem;
+    transition: color .15s ease;
+
+    &:hover { color: $color-primary; }
+    &.active { color: $color-primary; }
+  }
+}
+
+/* أزرار اليمين */
+.btn-download, .btn-register {
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 44px; padding: 0 18px; border-radius: 14px;
+  font-weight: 600; text-decoration: none;
+}
+
+.btn-download {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.12);
+  color: #1f1f1f;
+  box-shadow: 0 1px 0 rgba(0,0,0,.02), 0 2px 10px rgba(0,0,0,.04);
+}
+
+.btn-register {
+  background: $color-primary; color: #fff; border: 0;
+}
+
+/* Mega menu (نفس السابق مختصر) */
+.navbar .mega { position: static; }
+.mega .mega-menu{
+  position:absolute; left:50%; top:100%;
+  display: none;
+  transform: translate3d(-50%, 12px, 0) scale(.98);
+  width: min(820px, 92vw); background:#fff; border-radius:16px;
+  box-shadow: 0 25px 60px rgba(0,0,0,.08);
+  opacity:0; pointer-events:none;
+  transition: opacity .18s ease, transform .18s ease;
+}
+.mega:hover .mega-menu,
+.mega:focus-within .mega-menu,
+.mega.open .mega-menu{
+  opacity:1; pointer-events:auto;
+  display: inline;
+  transform: translate3d(-50%,16px,0) scale(1);
+}
+.mega-link{
+  display:inline-block; padding:.25rem 0; color:#3b3b3b; text-decoration:none;
+  transition: color .15s ease, transform .15s ease;
+  &:hover{ color:$color-primary; transform: translateX(2px); }
+}
+.mega-cta{ font-weight:600; color:$color-primary; text-decoration:none; border-bottom:2px solid $color-primary; padding-bottom:2px; }
+
+/* السهم الصغير بجانب Pages */
+.caret-up{
+  width:0; height:0; border-left:5px solid transparent; border-right:5px solid transparent;
+  border-bottom:6px solid currentColor; opacity:.85;
+}
+
+/* موبايل: أزرار اليمين تظهر داخل الكولابس */
+@media (max-width: 991.98px){
+  .nav-actions { display: flex !important; padding: .75rem 0; }
+  .mega .mega-menu{ left:0; right:0; width:100%; transform: translateY(8px) scale(1); }
+}

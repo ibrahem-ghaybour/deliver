@@ -1,0 +1,18 @@
+// Layout: grid / containers / sections spacing
+
+@use './variables' as *;
+@use './mixins' as *;
+
+.container { @include container(); }
+
+.section {
+  padding-block: $space-12;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: $space-6;
+}
+
+.stack > * + * { margin-top: $space-4; }

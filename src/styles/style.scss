@@ -1,0 +1,22 @@
+// SCSS entry file
+// Import order: variables -> mixins -> base -> layout -> components -> animations
+
+@use "./variables" as *;
+@use "./mixins" as *;
+@use "./base";
+@use "./layout";
+@use "./components";
+@use "./animations";
+@import "./navbar";
+@import "./hero";
+@import "./button";
+// Global app-level styles can go here
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  background: $color-background;
+  color: $color-text;
+  overflow-x: hidden;
+}
