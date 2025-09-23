@@ -10,8 +10,8 @@
 @use "./navbar";
 @use "./hero";
 @use "./button";
-@use "./aboutsection";
 @use "./journey";
+@use "./aboutsection";
 // Global app-level styles can go here
 :root {
   color-scheme: light dark;
@@ -31,7 +31,14 @@ body {
       text-align: center !important;
     }
   }
-
+  h2{
+    font-size: $space-10 !important;
+  }
+.partners-section {
+  .eyebrow { color: #ff5634; letter-spacing: .06em; font-weight: 700; }
+  .partner-item { max-width: 520px; margin-inline: auto; }
+  .partner-img { display: block; margin-inline: auto; }
+}
 
 }
 

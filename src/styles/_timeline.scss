@@ -1,0 +1,24 @@
+@use "./variables" as *;
+.timeline {
+  position: relative;
+}
+
+.timeline-card {
+  background: #fff;
+  border: 0;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+  margin-bottom: 2rem;
+
+  .eyebrow {
+    color: $color-primary;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: $space-6;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.timeline-gap {
+  height: 48px;
+}

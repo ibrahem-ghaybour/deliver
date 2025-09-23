@@ -13,109 +13,110 @@
 
     <title>Vite + TS</title>
   </head>
-  <body style="min-height: 200vh" class="">
-    <main class="page-with-fixed-header">
-    <header class="site-header">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container align-items-center">
-          <!-- Brand -->
-          <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-            <img src="src/assets/images/logo.svg" alt="Logo" height="50" />
-          </a>
+  <body style="min-height: 800vh" class="">
+    <main id="app" class="page-with-fixed-header pt-5">
+      <header class="site-header">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container align-items-center">
+            <!-- Brand -->
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+              <img src="src/assets/images/logo.svg" alt="Logo" height="50" />
+            </a>
 
-          <!-- Toggler -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNav"
-            aria-controls="mainNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <!-- Toggler -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainNav"
+              aria-controls="mainNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-          <!-- Nav content -->
-          <div class="collapse navbar-collapse" id="mainNav">
-            <!-- middle links -->
-            <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-3">
-              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
+            <!-- Nav content -->
+            <div class="collapse navbar-collapse" id="mainNav">
+              <!-- middle links -->
+              <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-3">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
 
-              <li class="nav-item dropdown mega position-static">
-                <a
-                  href="#"
-                  class="nav-link d-flex align-items-center gap-1"
-                  id="pagesLink"
-                >
-                  Pages <span class="caret-up ms-1"></span>
-                </a>
+                <li class="nav-item dropdown mega position-static">
+                  <a
+                    href="#"
+                    class="nav-link d-flex align-items-center gap-1"
+                    id="pagesLink"
+                  >
+                    Pages <span class="caret-up ms-1"></span>
+                  </a>
 
-                <!-- Mega menu -->
-                <div class="mega-menu shadow-lg rounded-4">
-                  <div class="row g-4 p-4">
-                    <div class="col-12 col-md-6">
-                      <h6 class="fw-bold mb-3">Menu</h6>
-                      <ul class="list-unstyled m-0">
-                        <li><a class="mega-link" href="#">Home</a></li>
-                        <li><a class="mega-link" href="#">About</a></li>
-                        <li><a class="mega-link" href="#">Contact</a></li>
-                        <li><a class="mega-link" href="#">Blog</a></li>
-                        <li><a class="mega-link" href="#">Blog posts</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-12 col-md-6">
-                      <h6 class="fw-bold mb-3">Utility pages</h6>
-                      <ul class="list-unstyled m-0">
-                        <li><a class="mega-link" href="#">Start here</a></li>
-                        <li><a class="mega-link" href="#">Styleguide</a></li>
-                        <li>
-                          <a class="mega-link" href="#">Password protected</a>
-                        </li>
-                        <li>
-                          <a class="mega-link" href="#">404 Not found</a>
-                        </li>
-                        <li><a class="mega-link" href="#">Licenses</a></li>
-                        <li><a class="mega-link" href="#">Changelog</a></li>
-                      </ul>
-                      <a class="mega-cta d-inline-block mt-3" href="#"
-                        >Browse More Templates</a
-                      >
+                  <!-- Mega menu -->
+                  <div class="mega-menu shadow-lg rounded-4">
+                    <div class="row g-4 p-4">
+                      <div class="col-12 col-md-6">
+                        <h6 class="fw-bold mb-3">Menu</h6>
+                        <ul class="list-unstyled m-0">
+                          <li><a class="mega-link" href="#">Home</a></li>
+                          <li><a class="mega-link" href="#">About</a></li>
+                          <li><a class="mega-link" href="#">Contact</a></li>
+                          <li><a class="mega-link" href="#">Blog</a></li>
+                          <li><a class="mega-link" href="#">Blog posts</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <h6 class="fw-bold mb-3">Utility pages</h6>
+                        <ul class="list-unstyled m-0">
+                          <li><a class="mega-link" href="#">Start here</a></li>
+                          <li><a class="mega-link" href="#">Styleguide</a></li>
+                          <li>
+                            <a class="mega-link" href="#">Password protected</a>
+                          </li>
+                          <li>
+                            <a class="mega-link" href="#">404 Not found</a>
+                          </li>
+                          <li><a class="mega-link" href="#">Licenses</a></li>
+                          <li><a class="mega-link" href="#">Changelog</a></li>
+                        </ul>
+                        <a class="mega-cta d-inline-block mt-3" href="#"
+                          >Browse More Templates</a
+                        >
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
+                </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">Cart(0)</a>
-              </li>
-            </ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Cart(0)</a>
+                </li>
+              </ul>
 
-            <!-- right actions -->
-            <div class="nav-actions d-lg-flex align-items-center gap-3 ms-lg-3">
-              <button class="btn btn-outline-dark my-outline">
-                Download app
-              </button>
-              <button type="button" class="btn my-btn">Register</button>
+              <!-- right actions -->
+              <div
+                class="nav-actions d-lg-flex align-items-center gap-3 ms-lg-3"
+              >
+                <button class="btn btn-outline-dark my-outline">
+                  Download app
+                </button>
+                <button type="button" class="btn my-btn">Register</button>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
-    <div id="app">
+        </nav>
+      </header>
       <script type="module" src="/src/main.ts"></script>
 
       <!-- Hero -->
       <!-- Hero -->
       <section class="hero-about px-5">
         <div class="container">
-          <div class="row align-items-center g-5">
+          <div class="row align-items-center pb-4 g-5">
             <!-- Left -->
             <div class="col-lg-6 left">
               <span class="eyebrow text-uppercase">About Deliver X</span>
@@ -184,77 +185,65 @@
           </div>
         </div>
       </section>
-
-      <section class="about-section p-5">
-        <div class="container">
-          <div class="row align-items-center g-5">
-            <!-- العمود الأيسر: الصورة -->
-            <div class="col-lg-6">
-              <div class="overflow-hidden">
-                <img
-                  src="src/assets/images/11.jpeg"
-                  alt="Delivery Man"
-                  class="rounded-4"
-                />
+      <template id="about-template">
+        <section class="about-section p-5">
+          <div class="container">
+            <div class="row align-items-center  g-5">
+              <!-- العمود الأيمن: الصورة -->
+              <div class="col-lg-6">
+                <div class="overflow-hidden">
+                  <img
+                    src=""
+                    alt="Mission Image"
+                    class="rounded-4 mission-img"
+                  />
+                </div>
+              </div>
+              <!-- العمود الأيسر: النص -->
+              <div class="col-lg-6">
+                <span class="eyebrow mission-label"></span>
+                <h2 class="fw-bold display-5 mt-2 mb-3 mission-title"></h2>
+                <p class="text-secondary mb-0 mission-desc"></p>
               </div>
             </div>
-
-            <!-- العمود الأيمن: النص -->
-            <div class="col-lg-6">
-              <span class="eyebrow">About Us</span>
-              <h2 class="fw-bold display-5 mt-2 mb-3">
-                Our company started <br />
-                back in 2016
-              </h2>
-              <p class="text-secondary mb-0">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-                voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui ratione voluptatem sequi
-                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-                sit amet, consectetur.
-              </p>
-            </div>
           </div>
-        </div>
-      </section>
-      <section class="our-mission p-5">
-        <div class="container">
-          <div class="row align-items-center flex-lg-row-reverse g-5">
-            <div class="col-lg-6">
-              <div class="overflow-hidden">
-                <img
-                  src="src/assets/images/22.jpeg"
-                  alt="Delivery Man"
-                  class="rounded-4"
-                />
+        </section>
+      </template>
+
+      <!-- مكان الاستدعاء -->
+      <div id="about-container"></div>
+
+      <template id="mission-template">
+        <section class="our-mission p-5">
+          <div class="container">
+            <div class="row align-items-center flex-lg-row-reverse g-5">
+              <!-- العمود الأيمن: الصورة -->
+              <div class="col-lg-6">
+                <div class="overflow-hidden">
+                  <img
+                    src=""
+                    alt="Mission Image"
+                    class="rounded-4 mission-img"
+                  />
+                </div>
+              </div>
+              <!-- العمود الأيسر: النص -->
+              <div class="col-lg-6">
+                <span class="eyebrow mission-label"></span>
+                <h2 class="fw-bold display-5 mt-2 mb-3 mission-title"></h2>
+                <p class="text-secondary mb-0 mission-desc"></p>
               </div>
             </div>
-            <!-- العمود الأيسر: الصورة -->
-            <div class="col-lg-6">
-              <span class="eyebrow">Our mission</span>
-              <h2 class="fw-bold display-5 mt-2 mb-3">
-                Our mission is to disrupt <br />
-                the food industry
-              </h2>
-              <p class="text-secondary mb-0">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-                voluptas sit aspernatur aut odit aut fugit.
-              </p>
-            </div>
-
-            <!-- العمود الأيمن: النص -->
           </div>
-        </div>
-      </section>
-      <section class="journey section py-6">
-        <div class="container">
-          <div class="row g-5">
+        </section>
+      </template>
+
+      <!-- مكان الاستدعاء -->
+      <div id="mission-container"></div>
+
+      <section class="journey section">
+        <div class="container py-5">
+          <div class="row g-5 py-5">
             <!-- Left: sticky copy -->
             <div class="col-lg-6">
               <div class="journey-sticky">
@@ -272,118 +261,53 @@
                 </button>
               </div>
             </div>
-
-            <!-- Right: timeline cards -->
             <div class="col-lg-6">
-              <div class="timeline">
-                <!-- card 1 -->
+              <template id="timeline-template">
                 <article
-                  class="timeline-card shadow-soft rounded-4 p-4"
+                  class="timeline-card shadow-soft rounded-4 p-5"
                   data-anim="fade-up"
                 >
-                  <div class="text-main fw-bold mb-2">2018</div>
-                  <h3 class="h4 fw-bold mb-3">
-                    Raised Series A at $50M valuation
-                  </h3>
-                  <p class="text-secondary mb-0">
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium...
-                  </p>
+                  <span class="eyebrow year"></span>
+                  <h3 class="h4 fw-bold mb-3 title"></h3>
+                  <p class="text-secondary mb-0 desc"></p>
                 </article>
+              </template>
 
-                <!-- spacer -->
-                <div class="timeline-gap"></div>
-
-                <!-- card 2 -->
-                <article
-                  class="timeline-card shadow-soft rounded-4 p-4"
-                  data-anim="fade-up"
-                >
-                  <div class="text-main fw-bold mb-2">2019</div>
-                  <h3 class="h4 fw-bold mb-3">
-                    Raised Series B at $600M valuation
-                  </h3>
-                  <p class="text-secondary mb-0">
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium...
-                  </p>
-                </article>
-                <article
-                  class="timeline-card shadow-soft rounded-4 p-4"
-                  data-anim="fade-up"
-                >
-                  <div class="text-main fw-bold mb-2">2018</div>
-                  <h3 class="h4 fw-bold mb-3">
-                    Raised Series A at $50M valuation
-                  </h3>
-                  <p class="text-secondary mb-0">
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium...
-                  </p>
-                </article>
-
-                <!-- spacer -->
-                <div class="timeline-gap"></div>
-
-                <!-- card 2 -->
-                <article
-                  class="timeline-card shadow-soft rounded-4 p-4"
-                  data-anim="fade-up"
-                >
-                  <div class="text-main fw-bold mb-2">2019</div>
-                  <h3 class="h4 fw-bold mb-3">
-                    Raised Series B at $600M valuation
-                  </h3>
-                  <p class="text-secondary mb-0">
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium...
-                  </p>
-                </article>
-                <article
-                  class="timeline-card shadow-soft rounded-4 p-4"
-                  data-anim="fade-up"
-                >
-                  <div class="text-main fw-bold mb-2">2019</div>
-                  <h3 class="h4 fw-bold mb-3">
-                    Raised Series B at $600M valuation
-                  </h3>
-                  <p class="text-secondary mb-0">
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium...
-                  </p>
-                </article>
-                <article
-                  class="timeline-card shadow-soft rounded-4 p-4"
-                  data-anim="fade-up"
-                >
-                  <div class="text-main fw-bold mb-2">2019</div>
-                  <h3 class="h4 fw-bold mb-3">
-                    Raised Series B at $600M valuation
-                  </h3>
-                  <p class="text-secondary mb-0">
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium...
-                  </p>
-                </article>
-                <article
-                  class="timeline-card shadow-soft rounded-4 p-4"
-                  data-anim="fade-up"
-                >
-                  <div class="text-main fw-bold mb-2">2019</div>
-                  <h3 class="h4 fw-bold mb-3">
-                    Raised Series B at $600M valuation
-                  </h3>
-                  <p class="text-secondary mb-0">
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium...
-                  </p>
-                </article>
-                <!-- أضف المزيد بنفس النمط -->
-              </div>
+              <div class="timeline" id="timeline-container"></div>
             </div>
           </div>
         </div>
       </section>
-    </div></main>
+
+      <!-- Template: partners section -->
+<template id="partners-template">
+  <section class="partners-section py-6">
+    <div class="container text-center">
+      <span class="eyebrow text-uppercase partners-label"></span>
+      <h2 class="display-4 fw-bold my-3 partners-title"></h2>
+      <p class="text-secondary mb-5 partners-subtitle"></p>
+
+      <div class="row g-5 partners-list">
+        <!-- تُحقن العناصر هنا -->
+      </div>
+    </div>
+  </section>
+</template>
+
+<!-- Item template (كرت واحد) -->
+<template id="partner-item-template">
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="partner-item">
+      <img class="partner-img img-fluid mb-3" src="" alt="" width="280" height="200" />
+      <h3 class="h3 fw-bold mb-3 partner-name"></h3>
+      <p class="text-secondary mb-0 partner-desc"></p>
+    </div>
+  </div>
+</template>
+
+<!-- مكان التركيب -->
+<div id="partners-container"></div>
+
+    </main>
   </body>
 </html>
