@@ -10,6 +10,8 @@
 @use "./navbar";
 @use "./hero";
 @use "./button";
+@use "./aboutsection";
+@use "./journey";
 // Global app-level styles can go here
 :root {
   color-scheme: light dark;
@@ -19,4 +21,17 @@ body {
   background: $color-background;
   color: $color-text;
   overflow-x: hidden;
+   p {
+    font-size: $space-6;
+    color: $color-neutral;
+    font-weight: 400;
+    width: 94%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      text-align: center !important;
+    }
+  }
+
+
 }
+

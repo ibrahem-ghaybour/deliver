@@ -1,9 +1,9 @@
-$primary: #ff5722;
 $padding: 16px 25px;
 $rounded: 12px;
 $weight:bold;
+@use './variables' as *;
 .my-btn {
-  background-color: $primary !important;
+  background-color: $color-primary !important;
   color: #fff !important;
   padding: $padding !important;
   border-radius: $rounded !important;
@@ -21,7 +21,7 @@ $weight:bold;
 }
 .my-outline:hover {
   &:hover {
-    background-color: $primary !important;
+    background-color: $color-primary !important;
     border-color: rgba(255, 0, 0, 0) !important;
   }
 }

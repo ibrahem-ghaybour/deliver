@@ -1,0 +1,36 @@
+/* ألوان ومساعدات */
+@use "./variables" as *;
+
+
+/* ظل ناعم للكروت */
+.shadow-soft {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+/* القسم */
+.journey {
+  background: #fbfbfb;
+  .journey-sticky {
+    position: sticky;
+    top: 96px; /* يثبّت العمود الأيسر */
+  }
+
+  .timeline {
+    position: relative;
+  }
+
+  .timeline-card {
+    background: #fff;
+    border: 0;
+  }
+
+  .timeline-gap {
+    height: 48px;
+  } /* مسافة بين الكروت */
+}
+
+/* حالة ابتدائية لتفادي الفلاش قبل GSAP */
+.timeline-card[data-anim="fade-up"] {
+  opacity: 0;
+  transform: translateY(24px);
+}

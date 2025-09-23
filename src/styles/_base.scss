@@ -22,3 +22,13 @@ a { color: $color-primary; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 .visually-hidden { @include sr-only(); }
+ .eyebrow {
+    color: $color-primary;
+    letter-spacing: 0.06em;
+    font-weight: bold;
+    font-size: $space-6;
+    @media screen and (max-width: 768px) {
+      display: inline-block;
+      width: 100%;
+    }
+  }

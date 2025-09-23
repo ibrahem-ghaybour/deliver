@@ -4,11 +4,14 @@ $text: #1e1e1e;
 
 .site-header {
   background: #fff;
-  padding: 23px 0px;
+  transition: all .4s ease;
+  padding: 10px 0px;
   position: sticky; top: 0; z-index: 1030;
   box-shadow: inset 0 -1px 0 rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.03);
 }
-
+.site-header--hidden {
+  transform: translateY(-100%) !important;
+}
 .navbar {
   padding-block: 0.85rem;
 

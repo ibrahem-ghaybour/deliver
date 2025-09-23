@@ -1,0 +1,20 @@
+@use "./variables" as *;
+.about-section , .our-mission {
+  .eyebrow {
+    color: $color-primary;
+    letter-spacing: 0.06em;
+    font-size: $space-6;
+    font-weight: bold !important;
+    @media screen and (max-width: 768px) {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+  p{
+    text-align: start !important;
+  }
+  img{
+    width: 95%;
+    aspect-ratio: 0.832 !important;
+  }
+}

@@ -8,7 +8,7 @@ export function heroIntro(): gsap.core.Timeline | null {
     { selector: ".hero-text", from: { y: 20, opacity: 0 }, at: ">-0.2" },
     {
       selector: ".hero-right .hero-visual",
-      from: { scale: 0.95, opacity: 0 },
+      from: { scale: 0.9, opacity: 0 },
       at: ">-0.1",
     },
     {
