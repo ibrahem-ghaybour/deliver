@@ -34,7 +34,7 @@ export function makeScrollSequence(
     scrollTrigger: scroll.trigger
       ? {
           trigger: scroll.trigger,
-          start: scroll.start || "top 90%",
+          start: scroll.start || "top 80%",
           toggleActions: scroll.toggleActions || "play none none none",
           once: scroll.once ?? true,
           end: scroll.end,

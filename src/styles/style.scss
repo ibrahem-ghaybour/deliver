@@ -7,9 +7,9 @@
 @use "./layout";
 @use "./components";
 @use "./animations";
-@import "./navbar";
-@import "./hero";
-@import "./button";
+@use "./navbar";
+@use "./hero";
+@use "./button";
 // Global app-level styles can go here
 :root {
   color-scheme: light dark;
