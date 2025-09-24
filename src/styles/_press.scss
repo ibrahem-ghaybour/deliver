@@ -1,0 +1,28 @@
+@use "./variables" as *;
+
+// Press section theme
+.press-section {
+  background: $color-text;
+}
+
+// Press card hover motion
+.press-card {
+  padding: 98px 66px;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+  will-change: transform;
+}
+.press-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 70px rgba(0,0,0,.08);
+}
+
+// Arrow nudge on hover along 45deg
+.press-card .press-link .rotate-45 {
+  transition: transform 200ms ease;
+  transform: rotate(45deg);
+  display: inline-block;
+}
+.press-card:hover .press-link .rotate-45,
+.press-card .press-link:hover .rotate-45 {
+  transform: rotate(45deg) translate(4px, -4px);
+}

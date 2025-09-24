@@ -1,0 +1,17 @@
+@use "./variables" as *;
+
+// Common utilities and helpers
+.shadow-soft {
+  box-shadow: 0 20px 60px rgba(0,0,0,.06);
+}
+
+.link-main {
+  color: $color-primary;
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
+
+// Keep a utility for the rotated arrow icon
+.rotate-45 {
+  transform: rotate(45deg);
+}

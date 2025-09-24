@@ -1,0 +1,18 @@
+@use "./variables" as *;
+
+.partners-section {
+  .eyebrow { color: $color-primary; letter-spacing: .06em; font-weight: 700; }
+  .partner-item { max-width: 520px; margin-inline: auto; }
+  .partner-img { display: block; margin-inline: auto; }
+
+ 
+}
+.partners-section .partners-subtitle.disc {
+  width: 55% !important;
+  margin-inline: auto;
+}
+@media screen and (max-width: 768px) {
+  .partners-section .partners-subtitle.disc {
+    width: 100% !important;
+  }
+}

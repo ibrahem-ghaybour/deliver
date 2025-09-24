@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     label: "Press & News",
     titleHtml: "See what the press says<br>about Deliver X",
     subtitle:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu egestas morbi sem vulputate etiam facilisis pellentesque ut quis.",
+      "",
   };
 
   headerReveal();
