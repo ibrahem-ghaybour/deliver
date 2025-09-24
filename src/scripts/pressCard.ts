@@ -1,3 +1,4 @@
+import { ASSETS } from "../assets/urls";
 export type Press_Item = {
   icon: string;
   source: string;
@@ -14,14 +15,14 @@ export type PressHeader = {
 
 const defaultItems: Press_Item[] = [
   {
-    icon: "src/assets/images/icon1.svg",
+    icon: ASSETS.press.icon1,
     source: "Company",
     headline: "Deliver X raises $26M in series B funding for growth",
     date: "January 22, 2023",
     url: "#",
   },
   {
-    icon: "src/assets/images/icon2.svg",
+    icon: ASSETS.press.icon2,
     source: "Company",
     headline: "Deliver X claims to be the #1 player in the delivery industry",
     date: "Nov 15, 2022",
@@ -67,12 +68,14 @@ export function buildPress(
     const headEl   = itemFrag.querySelector<HTMLElement>(".press-headline");
     const dateEl   = itemFrag.querySelector<HTMLElement>(".press-date");
     const linkEl   = itemFrag.querySelector<HTMLAnchorElement>(".press-link");
+    const arrowEl  = itemFrag.querySelector<HTMLImageElement>(".rotate-45");
 
     if (iconEl)   { iconEl.src = p.icon; iconEl.alt = p.source; }
     // if (sourceEl) sourceEl.textContent = p.source;
     if (headEl)   headEl.textContent   = p.headline;
     if (dateEl)   dateEl.textContent   = p.date;
     if (linkEl)   linkEl.href          = p.url;
+    if (arrowEl)  arrowEl.src          = ASSETS.press.row;
 
     list.appendChild(itemFrag);
   });
