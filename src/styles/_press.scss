@@ -2,7 +2,7 @@
 
 // Press section theme
 .press-section {
-  background: $color-text;
+  background: #fbfbfb;
 }
 
 // Press card hover motion
@@ -14,6 +14,28 @@
 .press-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 24px 70px rgba(0,0,0,.08);
+}
+
+// Touch feedback (since :hover is unreliable on touch devices)
+.press-card:active {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 50px rgba(0,0,0,.08);
+}
+
+// Responsive padding adjustments
+@media (max-width: 992px) {
+  .press-card { padding: 72px 40px; }
+}
+@media (max-width: 576px) {
+  .press-card { padding: 48px 24px; }
+}
+
+// Respect prefers-reduced-motion
+@media (prefers-reduced-motion: reduce) {
+  .press-card { transition: none; }
+  .press-card:hover,
+  .press-card:active { transform: none; box-shadow: 0 20px 60px rgba(0,0,0,.06); }
+  .press-card .press-link .rotate-45 { transition: none; }
 }
 
 // Arrow nudge on hover along 45deg

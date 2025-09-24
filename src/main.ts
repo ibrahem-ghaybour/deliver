@@ -130,10 +130,24 @@ document.addEventListener("DOMContentLoaded", () => {
     subtitle: headerPressNewsData.subtitle,
   });
 
-  createScrollAnimation(
-    ".press-list > *",
-    "#press-container",
-    { scale : 0.7, opacity: 0 }
-  );
+  // Responsive scroll animations for Press cards
+  ScrollTrigger.matchMedia({
+    "(min-width: 992px)": () => {
+      createScrollAnimation(
+        ".press-list > *",
+        "#press-container",
+        { y: 24, opacity: 0 },
+        { start: "top 70%", defaults: { stagger: 0.15 } }
+      );
+    },
+    "(max-width: 991px)": () => {
+      createScrollAnimation(
+        ".press-list > *",
+        "#press-container",
+        { y: 12, opacity: 0 },
+        { start: "top 90%", defaults: { stagger: 0.08 } }
+      );
+    },
+  });
 });
 
