@@ -18,6 +18,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { buildPress, type Press_Item } from "./scripts/pressCard";
 import { createScrollAnimation } from "./scripts/createScrollAnimation";
+import { mountDownloadCTA } from "./scripts/downloadCTA";
 
 gsap.registerPlugin(ScrollTrigger);
 document.addEventListener("DOMContentLoaded", () => {
@@ -130,6 +131,22 @@ document.addEventListener("DOMContentLoaded", () => {
     subtitle: headerPressNewsData.subtitle,
   });
 
+  // Mount Download CTA
+  mountDownloadCTA("#download-container", {
+    logoSrc: "src/assets/images/logo.svg",
+    title: "Deliver X",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut.",
+    iosUrl: "#",
+    androidUrl: "#",
+  });
+
+  // Animate the download card
+  createScrollAnimation(
+    ".download-card",
+    "#download-container",
+    { y: 20, opacity: 0 },
+    { start: "top 85%" }
+  );
   // Responsive scroll animations for Press cards
   ScrollTrigger.matchMedia({
     "(min-width: 992px)": () => {
