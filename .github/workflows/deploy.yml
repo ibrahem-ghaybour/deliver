@@ -1,0 +1,63 @@
+name: Deploy Vite to GitHub Pages
+
+on:
+  push:
+    branches: [ "master" ]   # غيّرها إذا فرعك مختلف
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install deps
+        run: npm ci
+
+      # بناء Vite (المخرج الافتراضي dist/)
+      - name: Build
+        run: npm run build
+
+      # (اختياري) دعم SPA على GitHub Pages
+      # نسخ index.html إلى 404.html حتى تعمل الـ client-side routing
+      - name: Create 404.html for SPA routing
+        run: cp dist/index.html dist/404.html
+
+      # منع Jekyll من تجاهل الملفات التي تبدأ بشرطة سفلية
+      - name: Add .nojekyll
+        run: touch dist/.nojekyll
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'dist'   # مخرج Vite
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
