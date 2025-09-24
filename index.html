@@ -16,7 +16,7 @@
     <title>Deliver X — About</title>
   </head>
   <body>
-    <main id="app" class="page-with-fixed-header">
+    <main id="app" class="page-with-fixed-header ">
       <!-- =================== Header =================== -->
       <header class="site-header">
         <nav class="navbar navbar-expand-lg">
@@ -97,7 +97,7 @@
       <script type="module" src="/src/main.ts"></script>
 
       <!-- =================== Hero =================== -->
-      <section class="hero-about px-5">
+      <section class="hero-about container-app">
         <div class="container">
           <div class="row align-items-center pb-4 g-5">
             <!-- Left -->
@@ -142,19 +142,19 @@
           <div class="row text-center g-4 mt-5 pt-5 hero-stats">
             <div class="col-6 col-lg-3">
               <div class="stat h3 m-0 fw-800">10M<span class="accent">+</span></div>
-              <div class="small text-secondary">Happy customers</div>
+              <div class="small  fs-5">Happy customers</div>
             </div>
             <div class="col-6 col-lg-3">
               <div class="stat h3 m-0 fw-800">500k<span class="accent">+</span></div>
-              <div class="small text-secondary">Restaurants available</div>
+              <div class="small fs-5 fw-">Restaurants available</div>
             </div>
             <div class="col-6 col-lg-3">
               <div class="stat h3 m-0 fw-800">30M<span class="accent">+</span></div>
-              <div class="small text-secondary">Successful deliveries</div>
+              <div class="small fs-5">Successful deliveries</div>
             </div>
             <div class="col-6 col-lg-3">
               <div class="stat h3 m-0 fw-800">99.9<span class="accent">%</span></div>
-              <div class="small text-secondary">Customer satisfaction</div>
+              <div class="small fs-5">Customer satisfaction</div>
             </div>
           </div>
         </div>
@@ -164,7 +164,7 @@
       <template id="mission-template">
         <section class="our-mission p-5">
           <div class="container">
-            <div class="row align-items-center g-5">
+            <div class="row align-items-center g-5 classes">
               <!-- Right image (flex-lg-row-reverse يمكن إضافتها عبر TS إذا لزم) -->
               <div class="col-lg-6">
                 <div class="overflow-hidden">
@@ -182,10 +182,10 @@
         </section>
       </template>
 
-      <div class="mission-container"></div>
+      <div class="mission-container container-app"></div>
 
       <!-- =================== Journey (sticky left + timeline right) =================== -->
-      <section class="journey section">
+      <section class="journey section container-app">
         <div class="container py-5">
           <div class="row g-5 py-5">
             <!-- Left: sticky copy -->
@@ -223,7 +223,7 @@
 
       <!-- =================== Partners (templates + mount) =================== -->
       <template id="partners-section-template">
-        <section class="partners-section py-6">
+        <section class="partners-section py-6 container-app">
           <div class="container text-center">
             <div class="partners-header py-5"><!-- injected header --></div>
             <div class="row g-5 partners-list"><!-- injected items --></div>
@@ -254,7 +254,7 @@
       <!-- =================== Press & News (templates + mount) =================== -->
       <!-- Section template (واحد فقط) -->
       <template id="press-section-template">
-        <section class="press-section py-5">
+        <section class="press-section py-5 container-app">
           <div class="container">
             <div class="text-center mb-5 position-relative">
               <span class="eyebrow text-uppercase press-label"></span>
@@ -286,9 +286,9 @@
       </template>
 
       <!-- Mount point (واحد فقط) -->
-      <div id="press-container" class="py-5"></div>
+      <div id="press-container" class="py-5 container-app "></div>
          <!-- =================== Download CTA (mount) =================== -->
-         <div id="download-container" class="pt-5"></div>
+         <div id="download-container" class="pt-5 container-app"></div>
 
       <!-- =================== Footer =================== -->
       <footer class="site-footer mt-5">

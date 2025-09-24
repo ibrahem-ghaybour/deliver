@@ -62,21 +62,18 @@ document.addEventListener("DOMContentLoaded", () => {
   } = {
     label: "Press & News",
     titleHtml: "See what the press says<br>about Deliver X",
-    subtitle:
-      "",
+    subtitle: "",
   };
 
   headerReveal();
   navbarReveal();
   heroIntro();
   statsReveal();
-  buildMission(missionData, "#mission-template", ".mission-container");
-  buildMission(
-    aboutData,
-    "#mission-template",
-    ".mission-container",
-    "flex-lg-row-reverse"
-  );
+
+  buildMission(aboutData, "#mission-template", ".mission-container");
+
+  buildMission(missionData, "#mission-template", ".mission-container",'flex-lg-row-reverse');
+
   buildTimeline();
   journeyTimeline();
   const section = mountPartnersSection("#partners-container");
@@ -109,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
       date: "Nov 15, 2022",
       url: "#",
     },
-     {
+    {
       icon: "src/assets/images/icon1.svg",
       source: "Company",
       headline: "Deliver X raises $26M in series B funding for growth",
@@ -154,7 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ".press-list > *",
         "#press-container",
         { y: 24, opacity: 0 },
-        { start: "top 70%", defaults: { stagger: 0.15 } }
+        { start: "top 20%", defaults: { stagger: 0.15 } }
       );
     },
     "(max-width: 991px)": () => {
@@ -162,9 +159,8 @@ document.addEventListener("DOMContentLoaded", () => {
         ".press-list > *",
         "#press-container",
         { y: 12, opacity: 0 },
-        { start: "top 90%", defaults: { stagger: 0.08 } }
+        { start: "top 20%", defaults: { stagger: 0.08 } }
       );
     },
   });
 });
-

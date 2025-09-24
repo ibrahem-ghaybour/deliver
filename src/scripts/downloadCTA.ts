@@ -31,7 +31,7 @@ export function mountDownloadCTA(
             <div class="d-flex align-items-start gap-3">
               <div>
                  <img src="${logoSrc}" alt="Logo" class="download-logo pb-4" />
-                <p class="m-0 text-secondary download-desc">${desc}</p>
+                <p class="m-0 text-secondary download-desc ">${desc}</p>
               </div>
             </div>
           </div>

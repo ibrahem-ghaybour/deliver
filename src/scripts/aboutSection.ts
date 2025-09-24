@@ -54,6 +54,8 @@ export function buildMission(
   const labelEl = root.querySelector<HTMLElement>(".mission-label");
   const titleEl = root.querySelector<HTMLElement>(".mission-title");
   const descEl = root.querySelector<HTMLElement>(".mission-desc");
+  const classes = root.querySelector<HTMLElement>(".classes");
+  classes?.classList.add(...toClassList(classNames));
 
   if (imgEl) imgEl.src = props.img;
   if (labelEl) labelEl.textContent = props.label;
