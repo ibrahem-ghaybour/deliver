@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const aboutData: MissionData = {
     img: "src/assets/images/11.jpeg",
     label: "About us",
-    title: "About us started <br> back in 2016",
-    desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsaquae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur..",
+    title: "Our company started back in 2016",
+    desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.",
   };
   const partnersData: Partner[] = [
     {
@@ -70,9 +70,9 @@ document.addEventListener("DOMContentLoaded", () => {
   heroIntro();
   statsReveal();
 
-  buildMission(aboutData, "#mission-template", ".mission-container");
+  buildMission(aboutData, "#mission-template", ".mission-container",'flex-lg-row-reverse');
 
-  buildMission(missionData, "#mission-template", ".mission-container",'flex-lg-row-reverse');
+  buildMission(missionData, "#mission-template", ".mission-container");
 
   buildTimeline();
   journeyTimeline();
@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ".download-card",
     "#download-container",
     { y: 20, opacity: 0 },
-    { start: "top 85%" }
+    { start: "top 60%" }
   );
   // Responsive scroll animations for Press cards
   ScrollTrigger.matchMedia({

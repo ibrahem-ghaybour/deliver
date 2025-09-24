@@ -106,8 +106,17 @@ export function renderPartnersItems(
 
   if (!sectionRoot) return;
 
-  createScrollAnimation(".partners-list .partner-item", sectionRoot, {
-    y: 50,
-    opacity: 0,
+  // Create an individual ScrollTrigger for each partner item
+  const items = Array.from(
+    sectionRoot.querySelectorAll<HTMLElement>(".partners-list .partner-item")
+  );
+
+  items.forEach((item) => {
+    createScrollAnimation(
+      item, // animate this item only
+      item, // trigger on this item entering the viewport
+      { y: 50, opacity: 0 },
+      { start: "top 50%" }
+    );
   });
 }

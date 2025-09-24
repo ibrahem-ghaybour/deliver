@@ -27,7 +27,7 @@ body {
   color: $color-text;
   overflow-x: hidden;
 
-   p {
+  p {
     font-size: $space-6;
     color: $color-neutral;
     font-weight: 400;
@@ -35,10 +35,21 @@ body {
     @media screen and (max-width: 768px) {
       width: 100%;
       text-align: center !important;
+      font-size: 1rem !important;
     }
   }
-  h2{
+  h2 {
     font-size: $space-10 !important;
+    @media screen and (max-width: 768px) {
+      font-size: 1.75rem !important;
+    }
   }
-  
+  .text-secondary{
+    text-align: start !important;
+  }
+  .lg-but{
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
 }

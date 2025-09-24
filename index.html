@@ -16,7 +16,7 @@
     <title>Deliver X — About</title>
   </head>
   <body>
-    <main id="app" class="page-with-fixed-header ">
+    <main id="app" class="page-with-fixed-header">
       <!-- =================== Header =================== -->
       <header class="site-header">
         <nav class="navbar navbar-expand-lg">
@@ -44,12 +44,20 @@
               <!-- middle links -->
               <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-3">
                 <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link active" href="#">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
 
                 <!-- Mega -->
                 <li class="nav-item dropdown mega position-static">
-                  <a href="#" class="nav-link d-flex align-items-center gap-1" id="pagesLink">
+                  <a
+                    href="#"
+                    class="nav-link d-flex align-items-center gap-1"
+                    id="pagesLink"
+                  >
                     Pages <span class="caret-up ms-1"></span>
                   </a>
                   <div class="mega-menu shadow-lg rounded-4">
@@ -69,23 +77,35 @@
                         <ul class="list-unstyled m-0">
                           <li><a class="mega-link" href="#">Start here</a></li>
                           <li><a class="mega-link" href="#">Styleguide</a></li>
-                          <li><a class="mega-link" href="#">Password protected</a></li>
-                          <li><a class="mega-link" href="#">404 Not found</a></li>
+                          <li>
+                            <a class="mega-link" href="#">Password protected</a>
+                          </li>
+                          <li>
+                            <a class="mega-link" href="#">404 Not found</a>
+                          </li>
                           <li><a class="mega-link" href="#">Licenses</a></li>
                           <li><a class="mega-link" href="#">Changelog</a></li>
                         </ul>
-                        <a class="mega-cta d-inline-block mt-3" href="#">Browse More Templates</a>
+                        <a class="mega-cta d-inline-block mt-3" href="#"
+                          >Browse More Templates</a
+                        >
                       </div>
                     </div>
                   </div>
                 </li>
 
-                <li class="nav-item"><a class="nav-link" href="#">Cart(0)</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Cart(0)</a>
+                </li>
               </ul>
 
               <!-- right actions -->
-              <div class="nav-actions d-lg-flex align-items-center gap-3 ms-lg-3">
-                <button class="btn btn-outline-dark my-outline">Download app</button>
+              <div
+                class="nav-actions d-lg-flex align-items-center gap-3 ms-lg-3"
+              >
+                <button class="btn btn-outline-dark my-outline">
+                  Download app
+                </button>
                 <button type="button" class="btn my-btn">Register</button>
               </div>
             </div>
@@ -104,12 +124,13 @@
             <div class="col-lg-6 left">
               <span class="eyebrow text-uppercase">About Deliver X</span>
               <h1 class="display-4 mt-2 mb-3 text hero-title">
-                We are here to help<br />amazing restaurants<br />get great customers
+                We are here to help<br />amazing restaurants<br />get great
+                customers
               </h1>
               <p class="mb-0 hero-text">
-                At morbi adipiscing sit sed consectetur senectus Dignissim sed amet tincidunt vitae
-                ultricies ultrices amet fermentum amet neque et id sed lacinia massa pretium
-                aliquam libero et.
+                At morbi adipiscing sit sed consectetur senectus Dignissim sed
+                amet tincidunt vitae ultricies ultrices amet fermentum amet
+                neque et id sed lacinia massa pretium aliquam libero et.
               </p>
             </div>
 
@@ -139,21 +160,29 @@
           </div>
 
           <!-- Stats -->
-          <div class="row text-center g-4 mt-5 pt-5 hero-stats">
+          <div class="row text-center g-4 mt-5 pt-lg-5 hero-stats">
             <div class="col-6 col-lg-3">
-              <div class="stat h3 m-0 fw-800">10M<span class="accent">+</span></div>
-              <div class="small  fs-5">Happy customers</div>
+              <div class="stat h3 m-0 fw-800">
+                10M<span class="accent">+</span>
+              </div>
+              <div class="small fs-5">Happy customers</div>
             </div>
             <div class="col-6 col-lg-3">
-              <div class="stat h3 m-0 fw-800">500k<span class="accent">+</span></div>
+              <div class="stat h3 m-0 fw-800">
+                500k<span class="accent">+</span>
+              </div>
               <div class="small fs-5 fw-">Restaurants available</div>
             </div>
             <div class="col-6 col-lg-3">
-              <div class="stat h3 m-0 fw-800">30M<span class="accent">+</span></div>
+              <div class="stat h3 m-0 fw-800">
+                30M<span class="accent">+</span>
+              </div>
               <div class="small fs-5">Successful deliveries</div>
             </div>
             <div class="col-6 col-lg-3">
-              <div class="stat h3 m-0 fw-800">99.9<span class="accent">%</span></div>
+              <div class="stat h3 m-0 fw-800">
+                99.9<span class="accent">%</span>
+              </div>
               <div class="small fs-5">Customer satisfaction</div>
             </div>
           </div>
@@ -162,20 +191,25 @@
 
       <!-- =================== Mission (template + mount) =================== -->
       <template id="mission-template">
-        <section class="our-mission p-5">
+        <section class="our-mission p-lg-5 p-1">
           <div class="container">
             <div class="row align-items-center g-5 classes">
               <!-- Right image (flex-lg-row-reverse يمكن إضافتها عبر TS إذا لزم) -->
-              <div class="col-lg-6">
-                <div class="overflow-hidden">
-                  <img src="" alt="Mission Image" class="rounded-4 mission-img" />
-                </div>
-              </div>
+
               <!-- Left copy -->
               <div class="col-lg-6">
-                <span class="eyebrow mission-label"></span>
+                <span class="eyebrow mission-label pt-5"></span>
                 <h2 class="fw-bold display-5 mt-2 mb-3 mission-title"></h2>
                 <p class="text-secondary mb-0 mission-desc"></p>
+              </div>
+              <div class="col-lg-6">
+                <div class="overflow-hidden">
+                  <img
+                    src=""
+                    alt="Mission Image"
+                    class="rounded-4 mission-img"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -196,17 +230,23 @@
                   It has been a long but<br />incredible journey
                 </h2>
                 <p class="text-secondary mb-4">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu egestas morbi
-                  sem vulputate etiam facilisis pellentesque ut quis.
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit tortor
+                  eu egestas morbi sem vulputate etiam facilisis pellentesque ut
+                  quis.
                 </p>
-                <button class="btn my-btn fs-5 px-4 rounded-4">Download app</button>
+                <button class="btn my-btn fs-5 px-4 rounded-4">
+                  Download app
+                </button>
               </div>
             </div>
 
             <!-- Right: timeline -->
             <div class="col-lg-6">
               <template id="timeline-template">
-                <article class="timeline-card shadow-soft rounded-4 p-5" data-anim="fade-up">
+                <article
+                  class="timeline-card shadow-soft rounded-4 p-lg-5"
+                  data-anim="fade-up"
+                >
                   <span class="eyebrow year"></span>
                   <h3 class="h4 fw-bold mb-3 title"></h3>
                   <p class="text-secondary mb-0 desc"></p>
@@ -218,8 +258,6 @@
           </div>
         </div>
       </section>
-
-   
 
       <!-- =================== Partners (templates + mount) =================== -->
       <template id="partners-section-template">
@@ -235,7 +273,7 @@
         <div>
           <span class="eyebrow text-uppercase partners-label"></span>
           <h2 class="display-4 fw-bold my-3 partners-title"></h2>
-          <p class="text-secondary mb-5 partners-subtitle  mx-auto disc" ></p>
+          <p class="text-secondary mb-5 partners-subtitle mx-auto disc"></p>
         </div>
       </template>
 
@@ -258,7 +296,7 @@
           <div class="container">
             <div class="text-center mb-5 position-relative">
               <span class="eyebrow text-uppercase press-label"></span>
-              <h2 class="display-5 fw-bold my-3 press-title "></h2>
+              <h2 class="display-5 fw-bold my-3 press-title"></h2>
               <p class="text-secondary m-0 press-subtitle w-50 mx-auto"></p>
             </div>
             <div class="row g-4 press-list"><!-- items injected here --></div>
@@ -269,15 +307,28 @@
       <!-- Item template (واحد فقط) -->
       <template id="press-item-template">
         <div class="col-12 col-lg-6">
-          <article class="press-card rounded-4 shadow-soft  h-100 bg-white">
+          <article class="press-card rounded-4 shadow-soft h-100 bg-white">
             <div class="d-flex align-items-center gap-2 text-secondary mb-3">
-              <img class="press-icon" src="" alt=""  />
+              <img class="press-icon" src="" alt="" />
               <span class="fw-semibold press-source"></span>
             </div>
             <h3 class="h3 fw-bold mb-4 press-headline"></h3>
             <div class="d-flex align-items-center justify-content-between">
-              <a class="link-main fw-semibold press-link " href="#" target="_blank" rel="noopener">
-                <span class="d-flex align-items-center gap-2"><span>Read more</span> <span aria-hidden="true"><img src="src/assets/images/row.svg" width="24" class="rotate-45" alt=""></span></span>
+              <a
+                class="link-main fw-semibold press-link"
+                href="#"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="d-flex align-items-center gap-2"
+                  ><span>Read more</span>
+                  <span aria-hidden="true"
+                    ><img
+                      src="src/assets/images/row.svg"
+                      width="24"
+                      class="rotate-45"
+                      alt="" /></span
+                ></span>
               </a>
               <span class="text-secondary press-date"></span>
             </div>
@@ -286,80 +337,108 @@
       </template>
 
       <!-- Mount point (واحد فقط) -->
-      <div id="press-container" class="py-5 container-app "></div>
-         <!-- =================== Download CTA (mount) =================== -->
-         <div id="download-container" class="pt-5 container-app"></div>
+      <div id="press-container" class="py-5 container-app"></div>
+      <!-- =================== Download CTA (mount) =================== -->
+      <div id="download-container" class="pt-5 container-app"></div>
 
       <!-- =================== Footer =================== -->
-      <footer class="site-footer mt-5">
-        <div class="container ">
-          <hr class="footer-sep mb-5" />
+    <footer class="site-footer mt-5" role="contentinfo" aria-label="Footer">
+  <div class="container">
+    <hr class="footer-sep mb-5" />
 
-          <div class="row g-5">
-            <div class="col-12 col-lg-2">
-              <h6>Menu</h6>
-              <div class="row">
-                <div class="col-6">
-                  <ul class="footer-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Blog posts</a></li>
-                  </ul>
-                </div>
-                <div class="col-6">
-                  <ul class="footer-links">
-                    <li><a href="#">Plans</a></li>
-                    <li><a href="#">Plan single</a></li>
-                    <li><a href="#">Register</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-lg-4 d-inline-block">
-              <h6>Utility pages</h6>
-              <ul class="footer-links ">
-                <li><a href="#">Start here</a></li>
-                <li><a href="#">Styleguide</a></li>
-                <li><a href="#">Password protected</a></li>
-                <li><a href="#">404 Not found</a></li>
-                <li><a href="#">Licenses</a></li>
-                <li><a href="#">Changelog</a></li>
-              </ul>
-              <a class="browse-more d-inline-block mt-2" href="#">Browse More Templates</a>
-            </div>
-
-            <div class="col-12 col-lg-6">
-              <h6>Available in</h6>
-              <div class="available-list">
-                <div class="city-pill">
-                  <span class="city-icon"><img src="src/assets/images/f1.svg" alt="San Francisco" /></span>
-                  <span>San Francisco, CA</span>
-                </div>
-                <div class="city-pill">
-                  <span class="city-icon"><img src="src/assets/images/f2.svg" alt="New York" /></span>
-                  <span>New York, NY</span>
-                </div>
-                <div class="city-pill">
-                  <span class="city-icon"><img src="src/assets/images/f3.svg" alt="Los Angeles" /></span>
-                  <span>Los Angeles, CA</span>
-                </div>
-                <div class="city-pill">
-                  <span class="city-icon"><img src="src/assets/images/f4.svg" alt="Seattle" /></span>
-                  <span>Seattle, WA</span>
-                </div>
-              </div>
-            </div>
+    <div class="row g-5">
+      <!-- Menu -->
+      <div class="col-12 col-lg-2">
+        <h6 class="mb-3 text-start">Menu</h6>
+        <!-- عمود واحد على الموبايل، عمودان من sm وأكبر -->
+        <div class="row row-cols-1 row-cols-sm-2 g-3">
+          <div class="col">
+            <ul class="footer-links list-unstyled m-0">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Blog posts</a></li>
+            </ul>
           </div>
-
-          <hr class="footer-sep my-5" />
-          <div class="footer-bottom text-center text-secondary py-3">
-            Copyright © Deliver X | Designed by <a href="#" class="link-main">BRIX Templates</a> - Powered by <a href="#" class="link-main">Webflow</a>
+          <div class="col">
+            <ul class="footer-links list-unstyled m-0">
+              <li><a href="#">Plans</a></li>
+              <li><a href="#">Plan single</a></li>
+              <li><a href="#">Register</a></li>
+            </ul>
           </div>
         </div>
-      </footer>
+      </div>
+
+      <!-- Utility pages -->
+      <div class="col-12 col-lg-4">
+        <h6 class="mb-3 text-start">Utility pages</h6>
+        <ul class="footer-links list-unstyled">
+          <li><a href="#">Start here</a></li>
+          <li><a href="#">Styleguide</a></li>
+          <li><a href="#">Password protected</a></li>
+          <li><a href="#">404 Not found</a></li>
+          <li><a href="#">Licenses</a></li>
+          <li><a href="#">Changelog</a></li>
+        </ul>
+        <a class="browse-more d-inline-block mt-2" href="#">Browse More Templates</a>
+      </div>
+
+      <!-- Available in -->
+      <div class="col-12 col-lg-6">
+        <h6 class="mb-3 text-start">Available in</h6>
+
+        <!-- موبايل: عمود واحد. ديسكتوب (lg+): عمودان بالضبط -->
+        <div class="available-list">
+          <div class="coll">
+            <div class="city-pill d-flex align-items-center gap-3 p-2 rounded-3">
+              <span class="city-icon flex-shrink-0 d-inline-flex align-items-center justify-content-center rounded-3 bg-light" style="width:56px;height:56px;">
+                <img src="src/assets/images/f1.svg" alt="San Francisco" width="32" height="32" class="img-fluid">
+              </span>
+              <span class="fw-semibold">San Francisco, CA</span>
+            </div>
+          </div>
+
+          <div class="coll">
+            <div class="city-pill d-flex align-items-center gap-3 p-2 rounded-3">
+              <span class="city-icon flex-shrink-0 d-inline-flex align-items-center justify-content-center rounded-3 bg-light" style="width:56px;height:56px;">
+                <img src="src/assets/images/f2.svg" alt="New York" width="32" height="32" class="img-fluid">
+              </span>
+              <span class="fw-semibold">New York, NY</span>
+            </div>
+          </div>
+
+          <div class="coll">
+            <div class="city-pill d-flex align-items-center gap-3 p-2 rounded-3">
+              <span class="city-icon flex-shrink-0 d-inline-flex align-items-center justify-content-center rounded-3 bg-light" style="width:56px;height:56px;">
+                <img src="src/assets/images/f3.svg" alt="Los Angeles" width="32" height="32" class="img-fluid">
+              </span>
+              <span class="fw-semibold">Los Angeles, CA</span>
+            </div>
+          </div>
+
+          <div class="coll">
+            <div class="city-pill d-flex align-items-center gap-3 p-2 rounded-3">
+              <span class="city-icon flex-shrink-0 d-inline-flex align-items-center justify-content-center rounded-3 bg-light" style="width:56px;height:56px;">
+                <img src="src/assets/images/f4.svg" alt="Seattle" width="32" height="32" class="img-fluid">
+              </span>
+              <span class="fw-semibold">Seattle, WA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="footer-sep my-5" />
+    <div class="footer-bottom text-center text-secondary py-3" style="text-align: center!important">
+      Copyright © Deliver X | Designed by
+      <a href="#" class="link-main">BRIX Templates</a> - Powered by
+      <a href="#" class="link-main">Webflow</a>
+    </div>
+  </div>
+</footer>
+
     </main>
   </body>
 </html>

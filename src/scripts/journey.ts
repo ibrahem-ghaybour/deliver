@@ -11,8 +11,8 @@ export function journeyTimeline(): gsap.core.Timeline {
       trigger: ".timeline",
       start: "top 75%",
       end: "bottom 20%",
-        once: true,
-      invalidateOnRefresh: true,            // مرة واحدة فقط
+      toggleActions: "play none play none",
+      invalidateOnRefresh: true,
     },
     defaults: { duration: 0.6, ease: "power2.out" }
   })

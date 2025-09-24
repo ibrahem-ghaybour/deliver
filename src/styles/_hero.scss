@@ -40,7 +40,7 @@ $rounded: 12px;
     line-height: 1.05;
     font-size: $space-12;
     @media screen and (max-width: 768px) {
-      font-size: $space-10;
+      font-size:2.25rem !important;
     }
   }
   p {
@@ -102,7 +102,7 @@ $rounded: 12px;
       border-radius: $rounded;
       overflow: hidden;
       @media screen and (max-width: 768px) {
-        width: 11.25em;
+        width: 8.75em;
         left: 0%;
       }
       img {
@@ -118,7 +118,7 @@ $rounded: 12px;
       border-radius: $rounded;
       overflow: hidden;
       @media screen and (max-width: 768px) {
-        width: 13.75em;
+        width: 10.938em;
         bottom: 10%;
         right: 0%;
       }
@@ -129,15 +129,24 @@ $rounded: 12px;
   }
 
   /* الأرقام */
-  .hero-stats .stat {
+  .hero-stats .stat{
     color: $ink;
     font-size: $space-12;
     font-weight: bold !important;
  @media screen and (max-width: 768px) {
-  font-size: $space-10;      
+  font-size:2.063rem !important;      
     }
     .accent {
       color: $color-primary;
+    }
+  }
+  .hero-stats .small {
+    font-size: $space-6;
+    @media screen and (max-width: 768px) {
+      font-size: 1rem !important;
+      opacity: 0.8;
+      font-weight: 500 !important;
+      padding: 0 1rem;
     }
   }
 }

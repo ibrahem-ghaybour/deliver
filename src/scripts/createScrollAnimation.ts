@@ -7,7 +7,7 @@ type ScrollAnimOptions = {
 };
 
 export function createScrollAnimation(
-  selector: string,
+  selector: string | HTMLElement,
   trigger: string | HTMLElement,
   animation: object = { scale: 0.5, opacity: 0 },
   options?: ScrollAnimOptions
@@ -16,7 +16,7 @@ export function createScrollAnimation(
   return makeScrollSequence(
     [{ selector: selector, from: animation }],
     {
-      scroll: { trigger: trigger, start: start || "top 70%", once: once ?? true },
+      scroll: { trigger: trigger, start: start || "top 70%", once: once ?? false },
       defaults: { duration: 0.6, ease: "power2.out", stagger: 0.15, ...(defaults || {}) },
     }
   );

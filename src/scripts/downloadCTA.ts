@@ -30,14 +30,14 @@ export function mountDownloadCTA(
           <div class="col-12 col-lg-6">
             <div class="d-flex align-items-start gap-3">
               <div>
-                 <img src="${logoSrc}" alt="Logo" class="download-logo pb-4" />
-                <p class="m-0 text-secondary download-desc ">${desc}</p>
+                 <img src="${logoSrc}" alt="Logo" style="width: 138px;height: 41px" class="download-logo mb-4" />
+                <p class="m-0 text-secondary download-desc">${desc}</p>
               </div>
             </div>
           </div>
           <div class="col-12 col-lg-6 d-flex flex-wrap gap-3 justify-content-lg-end">
-            <button href="${iosUrl}" class=" btn my-btn" role="button">Download for iOS</button>
-            <button href="${androidUrl}" class="btn my-btn" role="button">Download for Android</button>
+            <button href="${iosUrl}" class=" btn my-btn lg-but" role="button">Download for iOS</button>
+            <button href="${androidUrl}" class="btn my-btn lg-but" role="button">Download for Android</button>
           </div>
         </div>
       </div>

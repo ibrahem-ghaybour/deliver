@@ -25,6 +25,12 @@
   .timeline-gap {
     height: 48px;
   } /* مسافة بين الكروت */
+  button{
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      
+    }
+  }
 }
 
 /* حالة ابتدائية لتفادي الفلاش قبل GSAP */

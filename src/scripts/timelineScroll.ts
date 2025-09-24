@@ -35,8 +35,11 @@ export function makeScrollSequence(
       ? {
           trigger: scroll.trigger,
           start: scroll.start || "top 80%",
-          toggleActions: scroll.toggleActions || "play none none none",
-          once: scroll.once ?? true,
+          // Replay when scrolling down and up by default
+          // Format: onEnter onLeave onEnterBack onLeaveBack
+          toggleActions: scroll.toggleActions || "play none play none",
+          // Not one-time by default; can be overridden per call
+          once: scroll.once ?? false,
           end: scroll.end,
           markers: scroll.markers || false,
         }
