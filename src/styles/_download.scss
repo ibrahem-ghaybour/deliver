@@ -9,8 +9,7 @@
 }
 
 .download-logo {
-  width: 40px;
-  height: 40px;
+  width: 200px;
 }
 
 .download-title {
@@ -25,13 +24,13 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #ff5634;
+  background: $color-primary;
   color: #fff;
   font-weight: 600;
   text-decoration: none;
   padding: 10px 18px;
   border-radius: 12px;
-  border: 1px solid color-mix(in oklab, #ff5634, black 12%);
+  border: 1px solid color-mix(in oklab, $color-primary, black 12%);
   box-shadow: 0 8px 18px rgba(255,86,52,0.25);
   transition: transform 120ms ease, box-shadow 180ms ease, filter 120ms ease;
 }
