@@ -34,11 +34,33 @@ body {
   h2{
     font-size: $space-10 !important;
   }
-.partners-section {
   .eyebrow { color: #ff5634; letter-spacing: .06em; font-weight: 700; }
   .partner-item { max-width: 520px; margin-inline: auto; }
   .partner-img { display: block; margin-inline: auto; }
 }
-
+.press-section { background:#fbfbfb; }
+.shadow-soft { box-shadow: 0 20px 60px rgba(0,0,0,.06); }
+.link-main { color:#ff5634; text-decoration:none; &:hover{ text-decoration:underline; } }
+.rotate-45 {
+  transform: rotate(45deg); /* دوران 45 درجة */
+}
+// Press card hover motion
+.press-card {
+  transition: transform 200ms ease, box-shadow 200ms ease;
+  will-change: transform;
+}
+.press-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 70px rgba(0,0,0,.08);
 }
 
+// Arrow nudge on hover (keeps 45deg rotation, adds slight translateX)
+.press-card .press-link .rotate-45 {
+  transition: transform 200ms ease;
+  transform: rotate(45deg);
+  display: inline-block;
+}
+.press-card:hover .press-link .rotate-45,
+.press-card .press-link:hover .rotate-45 {
+  transform: rotate(45deg) translate(4px, -4px);
+}
