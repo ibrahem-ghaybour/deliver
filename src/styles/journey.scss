@@ -12,7 +12,9 @@
     position: sticky;
     top: 96px; /* يثبّت العمود الأيسر */
   }
-
+  .text-secondary{
+    text-align: start !important;
+  }
   .timeline {
     position: relative;
   }

@@ -2,7 +2,7 @@ import "./styles/style.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
-import { heroIntro, navbarReveal } from "./scripts/hero";
+import { heroIntro, navbarReveal, heroFloat } from "./scripts/hero";
 import { statsReveal } from "./scripts/stats";
 import { journeyTimeline } from "./scripts/journey";
 import { headerReveal } from "./scripts/header";
@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
   headerReveal();
   navbarReveal();
   heroIntro();
+  heroFloat();
   statsReveal();
 
   buildMission(aboutData, "#mission-template", ".mission-container",'flex-lg-row-reverse');
@@ -107,17 +108,17 @@ document.addEventListener("DOMContentLoaded", () => {
       url: "#",
     },
     {
-      icon: "src/assets/images/icon1.svg",
+      icon: "src/assets/images/icon3.svg",
       source: "Company",
-      headline: "Deliver X raises $26M in series B funding for growth",
-      date: "January 22, 2023",
+      headline: "Introducing curbside ordering with Deliver X",
+      date: "Sep 18, 2022",
       url: "#",
     },
     {
-      icon: "src/assets/images/icon2.svg",
+      icon: "src/assets/images/icon4.svg",
       source: "Company",
-      headline: "Deliver X claims to be the #1 player in the delivery industry",
-      date: "Nov 15, 2022",
+      headline: "Introducing the Square POS integration with Deliver X",
+      date: "Mar 12, 2022",
       url: "#",
     },
   ];

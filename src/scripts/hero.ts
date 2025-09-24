@@ -1,4 +1,7 @@
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { makeSequence } from "./timeline";
+gsap.registerPlugin(ScrollTrigger);
 
 export function heroIntro(): gsap.core.Timeline | null {
   if (!document.querySelector(".hero-title")) return null;
@@ -31,4 +34,30 @@ export function navbarReveal(): gsap.core.Timeline | null {
     { selector: ".site-header", from: { y: -40, opacity: 0 } },
     { selector: ".navbar", from: { y: -40, opacity: 0 } },
   ]);
+}
+
+// Scroll-scrubbed floating effect for hero cards
+export function heroFloat(): void {
+  const heroSection = document.querySelector<HTMLElement>(".hero-about");
+  if (!heroSection) return;
+
+  const floatOnce = (selector: string, amplitude: number) => {
+    if (!document.querySelector(selector)) return;
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: heroSection,
+        start: "top top",
+        end: "bottom top",
+        // Smoothly catch up to scroll over 3s -> visually ~3x slower reaction
+        scrub: 3,
+      },
+      defaults: { ease: "none" },
+    })
+    .to(selector, { y: -amplitude })
+    .to(selector, { y: amplitude })
+    .to(selector, { y: -amplitude * 0.6 });
+  };
+
+  floatOnce(".hero-right .card-burger", 16);
+  floatOnce(".hero-right .card-delivery", 12);
 }
