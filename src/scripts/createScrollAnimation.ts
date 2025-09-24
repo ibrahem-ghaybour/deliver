@@ -1,9 +1,9 @@
 import { makeScrollSequence } from "./timelineScroll";
 
-export function aboutReveal(selector: string,trigger: string): gsap.core.Timeline {
+export function createScrollAnimation(selector: string,trigger: string| HTMLElement,animation:object={ scale: 0.5, opacity: 0 }): gsap.core.Timeline {
   return makeScrollSequence(
     [
-      { selector: selector, from: { scale: 0.5, opacity: 0 } },
+      { selector: selector, from: animation },
     ],
     {
       scroll: { trigger: trigger, start: "top 70%", once: true },
