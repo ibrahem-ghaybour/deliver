@@ -7,6 +7,7 @@ $text: #1e1e1e;
   transition: all 0.4s ease;
   padding: 10px 0px;
   position: fixed;
+  overflow-x: hidden !important;
   top: 0;
   z-index: 1030;
   width: 100%;
