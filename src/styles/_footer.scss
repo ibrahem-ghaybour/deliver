@@ -51,6 +51,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 .col{ width: 50% !important;}
 }
 @media (min-width: 576px) { // sm and up: 2 columns
